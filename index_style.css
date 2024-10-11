@@ -191,6 +191,7 @@ th, td {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 15px;
 }
 .ul1-m {
     line-height: 25px;
