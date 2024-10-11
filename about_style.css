@@ -1,0 +1,155 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+body {
+
+}
+
+.container {
+    width: 100%;
+    /* min-height: 100vh; */
+    background: url('https://images.hdqwalls.com/wallpapers/hyperion-space-4k-j9.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+
+.logo {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(123, 59, 243);
+}
+.in {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 6px;
+    color: black
+}
+.un {
+    list-style: none;
+    display: flex;
+}
+.ln {
+    margin: 0px 20px;
+    font-size: 18px;
+}
+.an {
+    text-decoration: none;
+    position: relative;
+    padding: 0px 10px;
+    color: white;
+}
+.an::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+.an:hover::after {
+    width: 100%;
+}
+.content {
+    color: white;
+    margin: 8% 8%;
+    /* background: red; */
+}
+section {
+    border: 2px solid #eaeaea;
+    /* text-transform: uppercase; */
+    padding: 30px;
+    margin: 30px;
+    cursor: pointer;
+    position: relative;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+p {
+    font-size: 20px;
+}
+.s3 ul li {
+    font-size: 20px;
+}
+.footer {
+    background-color: rgb(28, 28, 28);
+}
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+.socialicons a {
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: .9;
+}
+.socialicons a:hover {
+    background-color: rgb(44, 44, 44);
+    transition: .5s;
+}
+.socialicons a:hover i {
+    color: white;
+    transition: .5s;
+}
+.footer-nav {
+    margin: 30px 0;
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: .7;
+    transition: .5s;
+}
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+.footer-bottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p {
+    color: white;
+}
+.designer {
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px
+}

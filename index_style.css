@@ -1,0 +1,269 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgb(50, 17, 82); */
+}
+
+.container {
+    width: 100%;
+    min-height: 150vh;
+    background: url('https://images.hdqwalls.com/wallpapers/hyperion-space-4k-j9.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+
+.logo {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(123, 59, 243);
+}
+.in {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 6px;
+    color: black
+}
+.un {
+    list-style: none;
+    display: flex;
+}
+.ln {
+    margin: 0px 20px;
+    font-size: 18px;
+}
+.an {
+    text-decoration: none;
+    position: relative;
+    padding: 0px 10px;
+    color: white;
+}
+.an::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+.an:hover::after {
+    width: 100%;
+}
+.content {
+    color: white;
+    margin: 8% 8%;
+}
+.jdl {
+    font-size: 75px;
+    margin-bottom: 5px;
+}
+.p1-c {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+b {
+    padding: 4px;
+    border-radius: 10px;
+    color: yellow;
+    transition: .5s;
+}
+hr {
+    margin-bottom: 30px;
+    color: white;
+}
+.sub-jdl {
+    font-size: 50px;
+    color: yellow;
+    margin-bottom: 5px;
+}
+.p2-c {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 27px;
+    text-align: justify;
+}
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    text-align: center;
+    margin-bottom: 90px;
+}
+th, td {
+    padding: 50px 40px;
+    font-size: 25px;
+
+}
+.box {
+    width: 250px;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgb(41, 41, 41) 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlay h3 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.overlay a {
+    margin-top: 10px;
+    color: rgb(41, 41, 41) ;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.box:hover {
+    transform: scale(1.2);
+}
+.box:hover .overlay {
+    height: 100%;
+}
+.manfaat {
+    border: 3px solid rgb(21, 234, 163);
+    border-radius: 50px;
+    padding: 50px;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+.manfaat:hover {
+    border: none;
+    background-color:rgb(37, 145, 109);
+    border-radius: 0;
+}
+.h1-m {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ul-wm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ul1-m {
+    line-height: 25px;
+
+}
+.ul2-m {
+    line-height: 26px;
+}
+.li-m {
+    font-size: 18px;
+}
+.footer {
+    background-color: rgb(28, 28, 28);
+}
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+.socialicons a {
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: .9;
+}
+.socialicons a:hover {
+    background-color: rgb(44, 44, 44);
+    transition: .5s;
+}
+.socialicons a:hover i {
+    color: white;
+    transition: .5s;
+}
+.footer-nav {
+    margin: 30px 0;
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: .7;
+    transition: .5s;
+}
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+.footer-bottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p {
+    color: white;
+}
+.designer {
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px
+}
